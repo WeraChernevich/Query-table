@@ -1,0 +1,25 @@
+.table-content {
+    padding: 0px 21px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 112px;
+    position: relative;
+  }
+
+  .table-content__font-style {
+    color: var(--black, #404040);
+    text-align: left;
+    font-family: var(
+      --body-2-regular-font-family,
+      "PtRootUi-Regular",
+      sans-serif
+    );
+    font-size: var(--body-2-regular-font-size, 14px);
+    font-weight: var(--body-2-regular-font-weight, 400);
+    position: relative;
+    width: 200px;
+  }

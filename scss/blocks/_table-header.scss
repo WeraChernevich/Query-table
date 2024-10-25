@@ -1,0 +1,122 @@
+.table-header {
+  box-sizing: border-box;
+  margin: 0 10px;
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+}
+.table-header__entry {
+  background: #ffffff;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #e5e5ea;
+  border-width: 1px;
+}
+.table-header__elements {
+  background: #fbfbfc;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #e5e5ea;
+  border-width: 1px;
+  padding: 0px 16px 0px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 61px;
+}
+.table-header__column {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  height: 60px;
+}
+.table-header__column-check {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 232px;
+}
+.table-header__column-checkbox {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: hidden;
+}
+.table-header__column-rect {
+  background: #ffffff;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #bbbbbb;
+  border-width: 1.2px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+}
+.table-header__content {
+  padding: 20px 16px 20px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 204px;
+}
+
+.icon {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  overflow: visible;
+}
+.table-header__content-sm {
+  padding: 20px 16px 20px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-end;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 112px;
+}
+.table-header__content-rait {
+  padding: 20px 16px 20px 16px;
+  display: flex;
+  // flex-direction: row;
+  // gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 212px;
+  position: relative;
+}
+
+.table-header__content-filter {
+  color: #404040;
+  text-align: center;
+  font-family: "PtRootUi-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  width: 100px;
+}

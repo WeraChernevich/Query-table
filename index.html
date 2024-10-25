@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./lib/air-datepicker.css">
+  <script src="./lib/air-datepicker.js" defer></script>
+  <title>query table</title>
+
+  <link rel="stylesheet" href="./scss/main.css">
+  <script src="./app.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="filter-layout">
+      <div class="filter-layout__pane">
+        <div class="filter-layout__pane-search">
+          <img class="filter-layout__pane-icon" src="./img/Table-el/search.svg" alt="1" />
+          <input class="filter-layout__search" type=search placeholder="Начните вводить слово">
+        </div>
+        <div class="filter-layout__pane-calendar">
+          <div class="filter-layout__pane-calendar-drop">
+            <img class="filter-layout__pane-calendar-icon" src="./img/Table-el/calendar_month.svg" alt="2" />
+            <input class="filter__input" type="" placeholder="01.10.2024 - 01.11.2024">
+          </div>
+          <button class="filter-layout__pane-icon-drop open-modal" data-modal="modal1"><img
+              src="./img/Table-el/Drop-downD.svg" alt="3" /></button>
+        </div>
+        <div class="filter-layout__button">
+          <img class="filter-layout__button-icon" src="./img/Table-el/save.svg" alt="4" />
+          <button class="filter-layout__button-drop open-modal" data-modal="modal2"><img src="./img/Table-el/Drop-downB.svg"  alt="5" /></button>
+          <div class="download" id="modal2">
+              <div class="download__element">
+                <div class="frame-1321314884">
+                  <div class="icon">
+                    <img class="group-427319174" src="./img/XLSX.svg" />
+                  </div>
+                  <button class="xlsx">XLSX</button>
+                </div>
+              </div>
+              <div class="download__element">
+                <div class="frame-1321314884">
+                  <div class="icon">
+                    <img class="icon2" src="./img/CSV.svg" />
+                  </div>
+                  <button class="xlsx2">CSV</button>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="filter-layout__view">
+        <div class="settings" id="modal3">
+          <div class="settings-toggle">
+            <div class="frame-1321314931">
+              <div class="checkbox">
+                <p><input type="checkbox" name="a" value="1417"> Скрыть дни без данных</p>
+              </div>
+            </div>
+            <div class="settings-toggle__tumbler">
+              <label class="toggle">
+                <input class="toggle-checkbox" type="checkbox">
+                <div class="toggle-switch"></div>
+                <span class="toggle-label">Сокращенный вид</span>
+              </label>
+            </div>
+            <div class="tumbler-toggle">
+              <div class="settings-toggle__tumbler">
+                <label class="toggle">
+                  <input class="toggle-checkbox" type="checkbox">
+                  <div class="toggle-switch"></div>
+                  <span class="toggle-label">Вычислить суммы</span>
+                </label>
+              </div>
+              <div class="checkbox">
+                <p><input type="checkbox" name="a" value="1417"> Показать график</p>
+              </div>
+            </div>
+            <button class="settings__button">
+              <div>Применить</div>
+            </button>
+          </div>
+          <div class="rectangle-2576"></div>
+          <div class="setting-delete">
+            <div class="setting-delete__frame">
+              <div class="setting-delete__frame-div">Очистить данные за</div>
+              <div class="setting-delete__frame-div">
+                <input class="settings-input" placeholder="1">
+              </div>
+              <div class="setting-delete__frame-div">дней</div>
+            </div>
+            <button class="settings__button-del">
+              <img class="icon" src="./img/trashcan.svg" />
+              <div>Удалить</div>
+            </button>
+          </div>
+        </div>
+        <div class="filter-layout__view-element">
+          <button class="filter-layout__view-icon open-modal" data-modal="modal2"><img
+              src="./img/Table-el/table_chart.svg" alt="6" /></button>
+          <div class="filter-layout__search">Настройки</div>
+        </div>
+
+      </div>
+    </div>
+    <div class="frame-1321314806">
+      <div class="table-elements">
+        <div class="frame-1321314949">
+          <div class="frame-1321314948">
+            <div class="table__header">
+              <input type="checkbox" name="a" value="1417" id="selectAll">
+              <div class="_01-10-2024">Ключевые слова</div>
+              <img class="icon" src="./img/Table-el/Drop-downD.svg" />
+            </div>
+          </div>
+          <div class="table-header2">
+            <div class="_01-10-2024">Позиция</div>
+            <img class="icon2" src="./img/Table-el/Drop-downD.svg" />
+          </div>
+          <div class="table-header3">
+            <div class="_01-10-2024">Клики</div>
+            <img class="icon3" src="./img/Table-el/Drop-downD.svg" />
+          </div>
+          <div class="table-header3">
+            <div class="_01-10-2024">CTR</div>
+            <img class="icon4" src="./img/Table-el/Drop-downD.svg" />
+          </div>
+          <div class="table-header3">
+            <div class="_01-10-2024">Показы</div>
+            <img class="icon5" src="./img/Table-el/Drop-downD.svg" />
+          </div>
+          <div class="table-header3">
+            <div class="_01-10-2024">Спрос</div>
+            <img class="icon6" src="./img/Table-el/Drop-downD.svg" />
+          </div>
+        </div>
+        <div class="table-header4">
+          <img class="icon7" src="./img/filter.svg" />
+          <div class="_01-10-2024">01.10.2024 (пн)</div>
+          <img class="icon8" src="./img/Table-el/Drop-downD.svg" />
+        </div>
+        <div class="table-header4">
+          <img class="icon9" src="./img/filter.svg" />
+          <div class="_01-10-2024">02.10.2024 (вт)</div>
+          <img class="icon10" src="./img/Table-el/Drop-downD.svg" />
+        </div>
+        <div class="table-header4">
+          <img class="icon11" src="./img/filter.svg" />
+          <div class="_01-10-2024">03.10.2024 (ср)</div>
+          <img class="icon12" src="./img/Table-el/Drop-downD.svg" />
+        </div>
+      </div>
+      <div class="frame-1321314832">
+        <div class="frame-1321314807">
+          <div class="frame-1321314862">
+            <div class="frame-1321314799">
+              <input type="checkbox" name="a" value="1417" id="checkbox">
+              <div class="div">кресло</div>
+            </div>
+            <div class="frame-1321314939">
+              <div class="_15-5">15.5</div>
+            </div>
+            <div class="frame-1321314943">
+              <div class="_14500">14500</div>
+            </div>
+            <div class="frame-1321314942">
+              <div class="_20-01">20.01%</div>
+            </div>
+            <div class="frame-1321314940">
+              <div class="_14500">14500</div>
+            </div>
+            <div class="frame-1321314941">
+              <div class="_14500">14500</div>
+            </div>
+          </div>
+          <div class="data-cells">
+            <div class="div2">Нет данных</div>
+          </div>
+          <div class="data-cells2">
+            <div class="frame-1321314842">
+              <div class="frame-1321314840">
+                <div class="frame-1321314836">
+                  <div class="_16-3">16.3</div>
+                </div>
+                <div class="frame-1321314835">
+                  <img class="icon13" src="./img/Table-el/Drop-downD.svg" />
+                  <div class="_11">11</div>
+                </div>
+              </div>
+              <div class="frame-1321314946">
+                <div class="frame-13213148422">
+                  <div class="div2">Клики</div>
+                  <div class="_7128">7128</div>
+                </div>
+                <div class="frame-1321314838">
+                  <div class="ctr">CTR</div>
+                  <div class="_20-012">20.01%</div>
+                </div>
+                <div class="frame-1321314841">
+                  <div class="div2">Показы</div>
+                  <div class="frame-1321314839">
+                    <div class="_1145">1145</div>
+                  </div>
+                </div>
+                <div class="frame-1321314837">
+                  <div class="div2">Спрос</div>
+                  <div class="_8713">8713</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="data-cells3">
+            <div class="frame-1321314842">
+              <div class="frame-1321314840">
+                <div class="frame-1321314836">
+                  <div class="_46-9">46.9</div>
+                </div>
+                <div class="frame-1321314835">
+                  <img class="icon14" src="./img/Table-el/Drop-downD.svg" />
+                  <div class="_9">9</div>
+                </div>
+              </div>
+              <div class="frame-1321314946">
+                <div class="frame-13213148422">
+                  <div class="div2">Клики</div>
+                  <div class="_7128">7128</div>
+                </div>
+                <div class="frame-1321314838">
+                  <div class="ctr">CTR</div>
+                  <div class="_20-012">20.01%</div>
+                </div>
+                <div class="frame-1321314841">
+                  <div class="div2">Показы</div>
+                  <div class="frame-1321314839">
+                    <div class="_1145">1145</div>
+                  </div>
+                </div>
+                <div class="frame-1321314837">
+                  <div class="div2">Спрос</div>
+                  <div class="_8713">8713</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rectangle-5"></div>
+        <div class="frame-1321314808">
+          <div class="frame-1321314862">
+            <div class="frame-1321314799">
+              <input type="checkbox" name="a" value="1417" id="checkbox">
+              <div class="div">кресло компьютерное</div>
+            </div>
+            <div class="frame-1321314939">
+              <div class="_25-5">25.5</div>
+            </div>
+            <div class="frame-1321314943">
+              <div class="_14500">14500</div>
+            </div>
+            <div class="frame-1321314942">
+              <div class="_20-01">20.01%</div>
+            </div>
+            <div class="frame-1321314940">
+              <div class="_14500">14500</div>
+            </div>
+            <div class="frame-1321314941">
+              <div class="_14500">14500</div>
+            </div>
+          </div>
+          <div class="data-cells">
+            <div class="div2">Нет данных</div>
+          </div>
+          <div class="data-cells3">
+            <div class="frame-1321314842">
+              <div class="frame-1321314840">
+                <div class="frame-1321314836">
+                  <div class="_46-9">46.9</div>
+                </div>
+                <div class="frame-1321314835">
+                  <img class="icon15" src="./img/Table-el/Drop-downD.svg" />
+                  <div class="_9">9</div>
+                </div>
+              </div>
+              <div class="frame-1321314946">
+                <div class="frame-13213148422">
+                  <div class="div2">Клики</div>
+                  <div class="_7128">7128</div>
+                </div>
+                <div class="frame-1321314838">
+                  <div class="ctr">CTR</div>
+                  <div class="_20-012">20.01%</div>
+                </div>
+                <div class="frame-1321314841">
+                  <div class="div2">Показы</div>
+                  <div class="frame-1321314839">
+                    <div class="_1145">1145</div>
+                  </div>
+                </div>
+                <div class="frame-1321314837">
+                  <div class="div2">Спрос</div>
+                  <div class="_8713">8713</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="data-cells">
+            <div class="div2">Нет данных</div>
+          </div>
+        </div>
+        <div class="rectangle-6"></div>
+        <div class="frame-1321314809">
+          <div class="frame-1321314862">
+            <div class="frame-1321314799">
+              <input type="checkbox" name="a" value="1417" id="checkbox">
+              <div class="div">кресло кожаное</div>
+            </div>
+            <div class="frame-1321314939">
+              <div class="_35-5">35.5</div>
+            </div>
+            <div class="frame-1321314943">
+              <div class="_14500">14500</div>
+            </div>
+            <div class="frame-1321314942">
+              <div class="_20-01">20.01%</div>
+            </div>
+            <div class="frame-1321314940">
+              <div class="_14500">14500</div>
+            </div>
+            <div class="frame-1321314941">
+              <div class="_14500">14500</div>
+            </div>
+          </div>
+          <div class="data-cells">
+            <div class="div2">Нет данных</div>
+          </div>
+          <div class="data-cells4">
+            <div class="frame-1321314842">
+              <div class="frame-1321314840">
+                <div class="frame-1321314836">
+                  <div class="_8">8</div>
+                </div>
+                <div class="frame-1321314835">
+                  <img class="icon16" src="./img/Table-el/Drop-downD.svg" />
+                  <div class="_1">1</div>
+                </div>
+              </div>
+              <div class="frame-1321314946">
+                <div class="frame-13213148422">
+                  <div class="div2">Клики</div>
+                  <div class="_7128">7128</div>
+                </div>
+                <div class="frame-1321314838">
+                  <div class="ctr">CTR</div>
+                  <div class="_20-012">20.01%</div>
+                </div>
+                <div class="frame-1321314841">
+                  <div class="div2">Показы</div>
+                  <div class="frame-1321314839">
+                    <div class="_1145">1145</div>
+                  </div>
+                </div>
+                <div class="frame-1321314837">
+                  <div class="div2">Спрос</div>
+                  <div class="_8713">8713</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="data-cells2">
+            <div class="frame-1321314842">
+              <div class="frame-1321314840">
+                <div class="frame-1321314836">
+                  <div class="_16-3">16.3</div>
+                </div>
+                <div class="frame-1321314835">
+                  <img class="icon17" src="./img/Table-el/Drop-downD.svg" />
+                  <div class="_11">11</div>
+                </div>
+              </div>
+              <div class="frame-1321314946">
+                <div class="frame-13213148422">
+                  <div class="div2">Клики</div>
+                  <div class="_7128">7128</div>
+                </div>
+                <div class="frame-1321314838">
+                  <div class="ctr">CTR</div>
+                  <div class="_20-012">20.01%</div>
+                </div>
+                <div class="frame-1321314841">
+                  <div class="div2">Показы</div>
+                  <div class="frame-1321314839">
+                    <div class="_1145">1145</div>
+                  </div>
+                </div>
+                <div class="frame-1321314837">
+                  <div class="div2">Спрос</div>
+                  <div class="_8713">8713</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="table-loader">
+      <div class="table-loader__panel">
+       <div class="table-loader__button-none" style="display: none;">
+        <div class="table-loader__button-delete">
+          <button class="table-loader__button" onclick="handleClick">
+            <img class="table-loader__icon" src="./img/trashcan.svg" />
+            <p>Удалить</p>
+          </button>
+          <div class="table-loader__panel-del">
+            <p>Выбрано слов</p>
+            <div class="_1">1</div>
+          </div>       
+         </div>
+       </div>
+        <div class="table-loader__panel-page">
+          <div class="table-loader__panel-button">
+            <img class="table-loader__panel-prev" src="./img/prev.svg" />
+          </div>
+          <div class="table-loader__panel-page-number">
+            <div class="page-number">Страница</div>
+            <div class="table-loader__panel-page-input">
+              <input placeholder="1">
+            </div>
+            <div class="number">из 5</div>
+          </div>
+          <div class="table-loader_panel-button">
+            <img class="table-loader__panel-next" src="./img/next.svg" />
+          </div>
+        </div>
+        <div class="table-loader__panel-page-drop">
+          <div class="number">50</div>
+          <img class="table-loader__panel-page-number" src="./img/Table-el/Drop-downD.svg" />
+        </div>
+      </div>
+    </div>
+    <div class="calendar__visualy" id="modal1">
+      <div class="calendar__col">
+        <div class="calendar__col-left">
+          <div class="calendar__period">
+            <div class="calendar__period-element">
+              <div class="calendar__period-element-title">Сегодня</div>
+            </div>
+            <div class="calendar__period-element">
+              <div class="calendar__period-element-title">Вчера</div>
+            </div>
+            <div class="calendar__period-element">
+              <div class="calendar__period-element-title">Последние 7 дней</div>
+            </div>
+            <div class="calendar__period-element">
+              <div class="calendar__period-element-title">Последние 30 дней</div>
+            </div>
+            <div class="calendar__period-element">
+              <div class="calendar__period-element-title">Последние 90 дней</div>
+            </div>
+            <div class="calendar__period-element">
+              <div class="calendar__period-element-title">От начала работы</div>
+            </div>
+            <div class="rectangle-2576"></div>
+          </div>
+          <div class="calendar__period-buttons">
+            <div class="button">
+              <button class="calendar__period-button">Применить</button>
+            </div>
+            <div class="button">
+              <button class="calendar__period-button">Отменить</button>
+            </div>
+          </div>
+        </div>
+        <div class="rectangle-25762"></div>
+        <div class="calendar__content">
+          <div class="calendar__input" id="calendar1">
+
+          </div>
+          <div class="calendar__input" id="calendar2">
+
+          </div>
+          <div class="calendar__input" id="calendar3">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

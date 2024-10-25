@@ -1,0 +1,200 @@
+.settings {
+    display: none;
+}
+
+.settings.open {
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    background: #ffffff;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #e5e5ea;
+    border-width: 1px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    justify-content: center;
+    width: 220px;
+    box-shadow: -5px 5px 15px -10px rgba(141, 141, 141, 0.6);
+    overflow: hidden;
+    z-index: 3;
+}
+.settings-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+}
+.settings-checkbox {
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+ 
+}
+
+.settings-toggle__tumbler {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+}
+.settings-toggle__tumbler-toggle{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+  
+  .settings-toggle__tumbler-label {
+    cursor: pointer;
+    text-indent: -9999px;
+    display: block;
+    background: #e5e5ea;
+    border-radius: 16px;
+    width: 40px;
+    position: relative;
+  }
+  
+  .settings-toggle__tumbler-label:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 18px;
+    height: 18px;
+    border-radius: 16px;
+    background: #fff;
+    transition: 0.3s;
+  }
+  
+  input:checked + label {
+    background: #0076F5;
+  }
+  
+  input:checked + label:after {
+    left: calc(100%);
+    transform: translateX(-100%);
+  }
+  
+  label:active:after {
+    width: 40px;
+  }
+.tumbler-toggle__checkbox {
+  color: #404040;
+  text-align: left;
+  font-family:
+    "PtRootUi-Regular",
+    sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.settings-toggle button {
+  background: #dfefff;
+  border-radius: 4px;
+  padding: 8px 16px 8px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 32px;
+}
+.settings__button {
+  color:#0076f5;
+  text-align: center;
+  font-family: "PtRootUi-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.setting-delete {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.setting-delete__frame {
+  padding: 0px 8px 0px 8px;
+  display: flex;
+  flex-direction: row;
+  row-gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+
+}
+
+.setting-delete__frame-div {
+  color: #404040;
+  text-align: left;
+  font-family: "PtRootUi-Regular",
+    sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+}
+
+.settings-input {
+  background: #ffffff;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #0076f5;
+  border-width: 1px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 32px;
+  position: relative;
+}
+.settings__button-del {
+  background: #ffe7e6;
+  border-radius: 4px;
+  padding: 8px 16px 8px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 32px;
+  position: relative;
+}
+.icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.settings__button-del>div{
+  color:  #e50c00;
+  text-align: center;
+  font-family: "PtRootUi-Medium", sans-serif;
+  font-size:14px;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

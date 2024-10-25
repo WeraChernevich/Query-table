@@ -1,0 +1,92 @@
+.download {
+  display: none;
+}
+
+.download.open{
+  position: absolute;
+  top: 35px;
+  left: 5px;
+  background: #ffffff;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #e5e5ea;
+  border-width: 1px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -5px 5px 15px -10px rgba(141, 141, 141, 0.6);
+  overflow: hidden;
+  z-index: 4;
+}
+.download__element {
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+
+  :hover {
+    background: #f7f7f7;
+    border-radius: 8px;
+  }
+}
+.frame-1321314884 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.group-427319174 {
+  width: 65%;
+  height: 80%;
+  position: absolute;
+  right: 25%;
+  left: 10%;
+  bottom: 10%;
+  top: 10%;
+  overflow: visible;
+}
+.xlsx {
+  color: var(--black, #404040);
+  text-align: left;
+  font-family: var(
+    --body-2-regular-font-family,
+    "PtRootUi-Regular",
+    sans-serif
+  );
+  font-size: var(--body-2-regular-font-size, 14px);
+  font-weight: var(--body-2-regular-font-weight, 400);
+  position: relative;
+}
+
+.icon2 {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: visible;
+}
+.xlsx2 {
+  color: var(--black, #404040);
+  text-align: left;
+  font-family: var(--body-2-medium-font-family, "PtRootUi-Medium", sans-serif);
+  font-size: var(--body-2-medium-font-size, 14px);
+  font-weight: var(--body-2-medium-font-weight, 500);
+  position: relative;
+}
